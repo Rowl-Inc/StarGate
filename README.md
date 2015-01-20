@@ -7,3 +7,4 @@ Example usecases would be:
 * Format and POST the inserts into a specific collection to a specific remote REST
 * Evaluate collection drop statements and trigger a web-hook with the dropped collection data
 * Sync data between MongoDB & ElasticSearch and format the JSON data using JavaScript functions between the transfers
+* On document update to any collection with name matching a custom regular expression, send a REST PUT with the changes to a base endpoint with the full collection name appened
