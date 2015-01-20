@@ -1,0 +1,6 @@
+/src/packages
+*.user
+*.suo
+bin
+obj
+/src/*.xml

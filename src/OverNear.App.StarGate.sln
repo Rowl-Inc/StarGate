@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverNear.App.StarGate", "OverNear.App.StarGate\OverNear.App.StarGate.csproj", "{39BF842E-7183-4B8F-A6B2-32BDF6295933}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverNear.Infrastructure", "OverNear.Infrastructure\OverNear.Infrastructure.csproj", "{74C51ECF-3685-447A-BCFC-DE23BB496115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverNear.Infrastructure.Mongo", "OverNear.Infrastructure.Mongo\OverNear.Infrastructure.Mongo.csproj", "{BD9CD084-4DBD-4CF8-869A-CD47A863D938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverNear.App.StarGate.Tests", "OverNear.App.StarGate.Tests\OverNear.App.StarGate.Tests.csproj", "{DD9BAC49-C69D-4FDE-B4AB-18DE65528F85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{F85418B9-6CBB-45E5-9ADF-40AF93A0F78B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverNear.App.HttpEcho", "OverNear.App.HttpEcho\OverNear.App.HttpEcho.csproj", "{23462387-806E-4660-A9C3-CEF5092F6A54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{812F5C95-804A-4646-AB67-BFFDFABDBFFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39BF842E-7183-4B8F-A6B2-32BDF6295933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39BF842E-7183-4B8F-A6B2-32BDF6295933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39BF842E-7183-4B8F-A6B2-32BDF6295933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39BF842E-7183-4B8F-A6B2-32BDF6295933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C51ECF-3685-447A-BCFC-DE23BB496115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C51ECF-3685-447A-BCFC-DE23BB496115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C51ECF-3685-447A-BCFC-DE23BB496115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C51ECF-3685-447A-BCFC-DE23BB496115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD9CD084-4DBD-4CF8-869A-CD47A863D938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD9CD084-4DBD-4CF8-869A-CD47A863D938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD9CD084-4DBD-4CF8-869A-CD47A863D938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD9CD084-4DBD-4CF8-869A-CD47A863D938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD9BAC49-C69D-4FDE-B4AB-18DE65528F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD9BAC49-C69D-4FDE-B4AB-18DE65528F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD9BAC49-C69D-4FDE-B4AB-18DE65528F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD9BAC49-C69D-4FDE-B4AB-18DE65528F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23462387-806E-4660-A9C3-CEF5092F6A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23462387-806E-4660-A9C3-CEF5092F6A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23462387-806E-4660-A9C3-CEF5092F6A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23462387-806E-4660-A9C3-CEF5092F6A54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{74C51ECF-3685-447A-BCFC-DE23BB496115} = {812F5C95-804A-4646-AB67-BFFDFABDBFFA}
+		{BD9CD084-4DBD-4CF8-869A-CD47A863D938} = {812F5C95-804A-4646-AB67-BFFDFABDBFFA}
+		{DD9BAC49-C69D-4FDE-B4AB-18DE65528F85} = {F85418B9-6CBB-45E5-9ADF-40AF93A0F78B}
+		{23462387-806E-4660-A9C3-CEF5092F6A54} = {F85418B9-6CBB-45E5-9ADF-40AF93A0F78B}
+	EndGlobalSection
+EndGlobal
