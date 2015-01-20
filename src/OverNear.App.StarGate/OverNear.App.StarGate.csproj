@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39BF842E-7183-4B8F-A6B2-32BDF6295933}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OverNear.App.StarGate</RootNamespace>
+    <AssemblyName>OverNear.App.StarGate</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Develop|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Develop\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DEVELOP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;RELEASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>OverNear.App.StarGate.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Hotfix|AnyCPU'">
+    <OutputPath>bin\Hotfix\</OutputPath>
+    <DefineConstants>TRACE;HOTFIX</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Feature|AnyCPU'">
+    <OutputPath>bin\Feature\</OutputPath>
+    <DefineConstants>TRACE;FEATURE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Jint">
+      <HintPath>..\packages\Jint.2.2.0\lib\portable-net40+sl50+win+wp80\Jint.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="StackifyLib">
+      <HintPath>..\packages\StackifyLib.1.10.0.0\lib\StackifyLib.dll</HintPath>
+    </Reference>
+    <Reference Include="StackifyLib.log4net">
+      <HintPath>..\packages\StackifyLib.log4net.1.10.0.0\lib\StackifyLib.log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasePathSettings.cs" />
+    <Compile Include="BigBang.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="IWorkUnit.cs" />
+    <Compile Include="Repo\ReadStateElasticAsyncRepo.cs" />
+    <Compile Include="Repo\ReadStateElasticRepo.cs" />
+    <Compile Include="Repo\ReadStateRepo.cs" />
+    <Compile Include="Subscribe\BinaryConvertDecorator.cs" />
+    <Compile Include="Subscribe\ElasticIndexDecorator.cs" />
+    <Compile Include="Subscribe\JsInclude.cs" />
+    <Compile Include="LoopDelayWork.cs" />
+    <Compile Include="NoExceptionWork.cs" />
+    <Compile Include="Repo\BootstrapReader.cs" />
+    <Compile Include="Repo\FatalReaderException.cs" />
+    <Compile Include="Repo\FinderMatchPart.cs" />
+    <Compile Include="Repo\IOpLogReader.cs" />
+    <Compile Include="Repo\IReadStateRepo.cs" />
+    <Compile Include="Repo\NotMasterException.cs" />
+    <Compile Include="Repo\NsInfo.cs" />
+    <Compile Include="Repo\PathFinder.cs" />
+    <Compile Include="Repo\ReadState.cs" />
+    <Compile Include="Repo\ReadStateMongoRepo.cs" />
+    <Compile Include="Repo\ReadThread.cs" />
+    <Compile Include="Repo\ReadThreadList.cs" />
+    <Compile Include="AbstractConfigCollection.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Subscribe\DynamicRestPublisher.cs" />
+    <Compile Include="Subscribe\ElasticSearchPublisher.cs" />
+    <Compile Include="Subscribe\FullObjectDecorator.cs" />
+    <Compile Include="Subscribe\IContext.cs" />
+    <Compile Include="Subscribe\JsIncludeList.cs" />
+    <Compile Include="Subscribe\CDataText.cs" />
+    <Compile Include="Subscribe\IHttpPublisher.cs" />
+    <Compile Include="Subscribe\IPublisher.cs" />
+    <Compile Include="Subscribe\NullPublisher.cs" />
+    <Compile Include="Subscribe\OpLogContext.cs" />
+    <Compile Include="Subscribe\Decorator.cs" />
+    <Compile Include="Subscribe\PublishChain.cs" />
+    <Compile Include="Subscribe\CallOnceDecorator.cs" />
+    <Compile Include="Subscribe\TriggerList.cs" />
+    <Compile Include="Subscribe\Trigger.cs" />
+    <Compile Include="Subscribe\RequestBuilder.cs" />
+    <Compile Include="Subscribe\RestPublisher.cs" />
+    <Compile Include="Subscribe\TransformJsDecorator.cs" />
+    <Compile Include="OpLogLine.cs" />
+    <Compile Include="OpLogType.cs" />
+    <Compile Include="ConfigSection.cs" />
+    <Compile Include="Subscribe\RouteList.cs" />
+    <Compile Include="Repo\OpLogReader.cs" />
+    <Compile Include="ServiceContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceContainer.Designer.cs">
+      <DependentUpon>ServiceContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subscribe\Route.cs" />
+    <Compile Include="Subscribe\IResponsibilityChain.cs" />
+    <Compile Include="Subscribe\RouteByJsPredicate.cs" />
+    <Compile Include="Subscribe\RoutingChain.cs" />
+    <Compile Include="Subscribe\RouteByNameSpace.cs" />
+    <Compile Include="Subscribe\TaskProcessState.cs" />
+    <Compile Include="TimeLineSequence.cs" />
+    <Compile Include="VerboseLogLevel.cs" />
+    <Compile Include="WaitForTriggerWork.cs" />
+    <Compile Include="WormHole.cs" />
+    <Compile Include="WorkThread.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="msvcp100.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="msvcr100.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="App.Debug.config">
+      <DependentUpon>App.config</DependentUpon>
+      <SubType>Designer</SubType>
+      <IsTransformFile>True</IsTransformFile>
+    </Content>
+    <Content Include="log4net.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App.Release.config">
+      <DependentUpon>App.config</DependentUpon>
+    </Content>
+    <Content Include="before-deploy.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="ClassDiagram.cd" />
+    <None Include="StarGate.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="StarGate.Release.config">
+      <SubType>Designer</SubType>
+      <DependentUpon>StarGate.config</DependentUpon>
+    </None>
+    <None Include="StarGate.Debug.config">
+      <SubType>Designer</SubType>
+      <DependentUpon>StarGate.config</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Subscribe\DecoratorPattern.cd" />
+    <None Include="Subscribe\ChainOfResponsibilityPattern.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OverNear.Infrastructure.Mongo\OverNear.Infrastructure.Mongo.csproj">
+      <Project>{bd9cd084-4dbd-4cf8-869a-cd47a863d938}</Project>
+      <Name>OverNear.Infrastructure.Mongo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OverNear.Infrastructure\OverNear.Infrastructure.csproj">
+      <Project>{74c51ecf-3685-447a-bcfc-de23bb496115}</Project>
+      <Name>OverNear.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <WebPublishTask>$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(MSBuildToolsVersion)\Web\Microsoft.Web.Publishing.Tasks.Dll</WebPublishTask>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <!-- this block allows for auto transform of config files -->
+  <UsingTask TaskName="TransformXml" AssemblyFile="$(WebPublishTask)" />
+  <Target Name="AfterCompile">
+    <TransformXml Condition="exists('StarGate.$(Configuration).config') and exists('$(WebPublishTask)')" Source="StarGate.Config" Destination="$(IntermediateOutputPath)StarGate.config" Transform="StarGate.$(Configuration).config" />
+    <TransformXml Condition="exists('App.$(Configuration).config') and exists('$(WebPublishTask)')" Source="App.config" Destination="$(IntermediateOutputPath)$(TargetFileName).config" Transform="App.$(Configuration).config" />
+    <ItemGroup>
+      <AppConfigWithTargetPath Condition="exists('StarGate.$(Configuration).config') and exists('$(WebPublishTask)')" Remove="StarGate.config" />
+      <AppConfigWithTargetPath Condition="exists('StarGate.$(Configuration).config') and exists('$(WebPublishTask)')" Include="$(IntermediateOutputPath)StarGate.config">
+        <TargetPath>StarGate.config</TargetPath>
+      </AppConfigWithTargetPath>
+      <AppConfigWithTargetPath Condition="exists('App.$(Configuration).config') and exists('$(WebPublishTask)')" Include="$(IntermediateOutputPath)$(TargetFileName).config">
+        <TargetPath>$(TargetFileName).config</TargetPath>
+      </AppConfigWithTargetPath>
+      <AppConfigWithTargetPath Condition="exists('App.$(Configuration).config') and exists('$(WebPublishTask)')" Remove="App.config" />
+    </ItemGroup>
+  </Target>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+</Project>
