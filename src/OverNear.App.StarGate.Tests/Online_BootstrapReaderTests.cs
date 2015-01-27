@@ -54,7 +54,7 @@ namespace OverNear.App.StarGate.Tests
 		{
 			string name = typeof(DummyPayload).Name;
 
-			var url = new MongoUrl(ConfigurationManager.AppSettings.ExtractConfiguration("Stream", string.Empty));
+			var url = new MongoUrl(ConfigurationManager.AppSettings.ExtractConfiguration("UnitTest", string.Empty));
 			_repo = new MongoRepo<DummyPayload>(url);
 			StringAssert.AreNotEqualIgnoringCase(name, _repo.Database.Name);
 			_nameSpace = _repo.Database.Name + '.' + name;

@@ -21,7 +21,7 @@ namespace OverNear.App.StarGate.Tests
 
 		static TransformerDecorationUnitTest()
 		{
-			DUMMY_REPO = new MongoRepo("Stream");
+			DUMMY_REPO = new MongoRepo("UnitTest");
 		}
 
 		[Test]

@@ -24,7 +24,7 @@ namespace OverNear.App.StarGate.Tests
 		static readonly IMongoRepo DUMMY_REPO;
 		static RestPublishTests()
 		{
-			DUMMY_REPO = new MongoRepo("Stream");
+			DUMMY_REPO = new MongoRepo("UnitTest");
 		}
 
 		readonly Random _rand = new Random();

@@ -27,7 +27,7 @@ namespace OverNear.App.StarGate.Tests
 		internal static readonly OpLogType[] TRUE_FLAGS;
 		static DomainObjTests()
 		{
-			DUMMY_REPO = new MongoRepo("Stream");
+			DUMMY_REPO = new MongoRepo("UnitTest");
 
 			var flags = new List<OpLogType>();
 			foreach (OpLogType t in Enum.GetValues(typeof(OpLogType)))
