@@ -1,6 +1,8 @@
 # StarGate [![Build status](https://ci.appveyor.com/api/projects/status/l1ew8x5xhawy9o78?svg=true)](https://ci.appveyor.com/project/ronin1/stargate)
 StarGate is a MongoDB Oplog analyzer that can be customized to perform triggers base on any type of MongoDB event (IE: CRUD ops, db admin ops). Think of it as an external trigger engine.
 
+![](https://github.com/Rowl-Inc/StarGate/wiki-blob/img/diagram.png)
+
 This application was originally engineered to generate REST calls on MongoDB write operations.  The inspiration came from a Facebook Engineering publication of a similar closed-sourced system developed for MySQL called <a href="https://www.facebook.com/notes/facebook-engineering/wormhole-pubsub-system-moving-data-through-space-and-time/10151504075843920">WormHole</a>.
 
 Example usecases would be: 
